@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: SMS_Mensagem_API

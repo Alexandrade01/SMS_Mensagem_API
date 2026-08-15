@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SmsMensagemApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SmsMensagemApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SmsMensagemApiApplication.class, args);
+    }
 
 }

@@ -1,0 +1,97 @@
+{
+  "info": {
+    "_postman_id": "0a8f74ad-7a1b-4cea-91d5-aedffdb49a95",
+    "name": "SMS_Mensagem_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "copilot-cli"
+  },
+  "item": [
+    {
+      "name": "Salvar SMS - ENVIADO",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 1,\n  \"phoneNumber\": \"+5511998765432\",\n  \"status\": \"ENVIADO\",\n  \"sentAt\": \"2026-08-16 22:30:00\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/sms_mensagem_api/SMS_Message",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "sms_mensagem_api",
+            "SMS_Message"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Salvar SMS - RECEBIDO",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 2,\n  \"phoneNumber\": \"+5511981122334\",\n  \"status\": \"RECEBIDO\",\n  \"sentAt\": \"2026-08-16 22:31:00\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/sms_mensagem_api/SMS_Message",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "sms_mensagem_api",
+            "SMS_Message"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Salvar SMS - ERRO_DE_ENVIO",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 3,\n  \"phoneNumber\": \"+5511973344556\",\n  \"status\": \"ERRO_DE_ENVIO\",\n  \"sentAt\": \"2026-08-16 22:32:00\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/sms_mensagem_api/SMS_Message",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "sms_mensagem_api",
+            "SMS_Message"
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}

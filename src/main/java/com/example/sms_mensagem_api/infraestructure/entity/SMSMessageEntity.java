@@ -25,6 +25,7 @@ public class SMSMessageEntity implements Serializable {
     @Column(name = "NUMERO_TELEFONE", nullable = false)
     private String phoneNumber;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "STATUS", nullable = false)
     private StatusEnum status; // ENVIADO, RECEBIDO, ERRO DE ENVIO
 
